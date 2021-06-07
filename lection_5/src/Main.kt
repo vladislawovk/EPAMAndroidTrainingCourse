@@ -12,5 +12,7 @@ fun main() {
     bikeGarage.removeTransport(bike)
     println(bikeGarage.getTransport())
 
-    val carUiModel = carGarage.getTransport().filter { it.color == Color.RED }.map { it.toTransportUiModel() }
+    val carUiModel = carGarage.getTransport()
+        .filter { it.color == Color.RED }
+        .map { it.toTransportUiModel() }
 }
